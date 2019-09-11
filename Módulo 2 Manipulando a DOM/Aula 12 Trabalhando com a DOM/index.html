@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso javascript</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" name="nome" id="nome"/>
+        <button class="botao">Adicionar</button>
+        
+    </div>
+
+    <script>
+        //var inputElement = document.getElementById('nome');//pega pelo id 'nome'
+        //var inputElement = document.getElementsByTagName('input')[0];//pega pela tag 'input'//[0]pega o primeiro input
+        //var inputElement = document.getElementsByClassName('botao')[1];//pega pela class 'nome'//[0]pega o primeiro item com a class 'botao'
+        
+
+       // var inputElement = document.querySelector('div#app input');//pega o primeiro elemento//[0]pega o primeiro item 
+       // var inputElement = document.querySelectorAll('div#app input')[1];//pega o segundo elemento//[0]pega o primeiro item 
+       // var inputElement = document.querySelectorAll('input[name=nome]');//pega o elemento com o name= nome
+       //console.log(inputElement)
+        //adicionando eventos
+
+        //inputElement.addEventListener('click',entrar);//add um evento no inputelemente
+        //function entrar(){
+        //    alert('ok');
+        //}
+
+        var inputElement = document.querySelector('input[name=nome]');//pega o elemento com o name= nome
+        var btnElement = document.querySelector('button.botao');
+        
+        btnElement.onclick = function(){
+            var text = inputElement.value;
+
+            alert(text);
+        }
+
+        
+    </script>
+        
+    
+</body>
+</html>

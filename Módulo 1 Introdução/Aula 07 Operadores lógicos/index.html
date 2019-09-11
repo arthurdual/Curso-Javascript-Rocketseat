@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso de javascript</title>
+</head>
+<body>
+    <script>
+       //And, or, not
+       //&&,  ||, !'
+
+       var sexo ='M',  idade = 23;
+        /*
+       if(sexo === 'M' && idade >= 18) {//and
+           console.log('OK')
+       }
+       if(sexo !=== 'M' || idade >= 18) {//or e not no M
+           console.log('OK')
+       }*/
+
+       /*
+       if(sexo === 'M') {
+           //console.log( 'OK')
+           var masculino = true;
+       }else{
+           var masculino = false;
+       }*/
+
+       /*
+       var masculino;//mesmo codigo acima porem com a variavel fora do if
+       if(sexo === 'M') {
+           //console.log('OK')
+           masculino = true;
+       }
+       else{
+           masculino = false;
+       }
+       */
+       var masculino = (sexo === 'M');
+       //mesmo codigo acima simplificado retorna true ou false
+       
+       console.log(masculino)
+    </script>
+</body>
+</html>

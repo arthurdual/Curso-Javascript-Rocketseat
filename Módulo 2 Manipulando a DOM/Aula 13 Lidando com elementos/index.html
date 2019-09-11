@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso javascript</title>
+</head>
+<body>
+    <div id="app">
+        <input id="nome">
+        
+    </div>
+
+    <script>
+        //criando essa linha de codigo
+        //<a href="https://rocketseat.com.br">Acessar site da rocketseat</a>
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://rocketseat.com.br');
+        linkElement.setAttribute('title', 'Site da rocketseat');
+        
+        var textElement = document.createTextNode('Acessar site da rocketseat');
+        linkElement.appendChild(textElement);
+
+        //coloca a linha do codigo na div#app 
+        var containerElement = document.getElementById('app');
+        containerElement.appendChild(linkElement);
+
+        var inputElement = document.getElementById('nome');
+        containerElement.removeChild(inputElement);//remove o elemento filho (input com id nome) da div app
+
+        
+    </script>
+        
+    
+</body>
+</html>
